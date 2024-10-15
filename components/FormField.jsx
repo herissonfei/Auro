@@ -27,7 +27,7 @@ const FormField = ({
           secureTextEntry={title === "Password" && !showPassword}
           {...props}
         />
-
+        {/* 点击显示或者隐藏密码 */}
         {title === "Password" && (
           <TouchableOpacity onPress={() => setShowPassword(!showPassword)}>
             <Image

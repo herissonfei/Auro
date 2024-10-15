@@ -8,6 +8,7 @@ const CustomButton = ({
   isLoading,
 }) => {
   return (
+    // 首页按钮
     <TouchableOpacity
       onPress={handlePress}
       activeOpacity={0.7}
