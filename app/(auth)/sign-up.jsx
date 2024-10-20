@@ -17,7 +17,9 @@ const SignUp = () => {
     email: "",
     password: "",
   });
-
+  const submit = () => {
+    createUser();
+  };
   // const submit = async () => {
   //   if (form.username === "" || form.email === "" || form.password === "") {
   //     Alert.alert("Error", "Please fill in all fields");
@@ -80,7 +82,7 @@ const SignUp = () => {
 
           <CustomButton
             title="Sign Up"
-            // handlePress={submit}
+            handlePress={submit}
             containerStyles="mt-7"
             isLoading={isSubmitting}
           />
