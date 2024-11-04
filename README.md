@@ -1,5 +1,3 @@
-......
-
 <div align="center">
   <div>
     <img src="https://img.shields.io/badge/-React_Native-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
@@ -7,19 +5,91 @@
     <img src="https://img.shields.io/badge/NativeWind-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="nativewind" />
   </div>
 
+  <h3 align="center">Application de Partage Vidéo</h3>
+
+</div>
+<div align="center">
+  <a href="#english-version">Go to English Version</a>
+</div>
+## <a name="introduction">🤖 Introduction</a>
+
+Développée avec React Native pour une expérience utilisateur fluide, Animatable pour des animations captivantes, et intégrée aux systèmes backend fiables d'Appwrite, cette application propose un design impressionnant et des fonctionnalités avancées, permettant le partage fluide de vidéos au sein de la communauté.
+
+## <a name="tech-stack">⚙️ Pile Technologique</a>
+
+- React Native
+- Expo
+- Nativewind
+- Animatable
+- Appwrite
+
+## <a name="features">🔋 Fonctionnalités</a>
+
+👉 **Écran d'Accueil** : Graphiques engageants et instructions claires pour accueillir les utilisateurs.
+
+👉 **Système d'Authentification et Autorisation Sécurisé** : Connexion sécurisée par e-mail pour protéger les comptes des utilisateurs.
+
+👉 **Écran d'Accueil Dynamique avec Liste Animée** : Une liste animée qui présente les dernières vidéos pour une navigation fluide.
+
+👉 **Fonctionnalité de Rafraîchissement** : Les utilisateurs peuvent rafraîchir le contenu d'un simple geste pour obtenir des informations à jour.
+
+👉 **Recherche en Texte Intégral** : Recherchez efficacement des vidéos avec des suggestions en temps réel et des résultats instantanés.
+
+👉 **Navigation par Onglets** : Navigation aisée entre les sections comme Accueil, Recherche, et Profil.
+
+👉 **Écran de Création de Publication pour le Téléchargement de Médias** : Téléchargez directement des vidéos et des images depuis l'application avec une sélection de médias intégrée.
+
+👉 **Écran de Profil avec Détails** : Affichez les informations du compte et les activités, y compris les vidéos téléchargées et le nombre de followers, pour une expérience personnalisée.
+
+👉 **Réactivité** : Performance fluide et adaptabilité sur divers appareils et tailles d'écran pour une expérience utilisateur cohérente.
+
+👉 **Animations** : Animations dynamiques utilisant la bibliothèque Animatable pour enrichir l'interaction et l'engagement des utilisateurs dans l'interface de l'application.
+
+et bien plus encore, y compris l'architecture du code et la réutilisabilité.
+
+## <a name="quick-start">🤸 Démarrage Rapide</a>
+
+Suivez ces étapes pour configurer le projet localement sur votre machine.
+
+**Prérequis**
+
+Assurez-vous d'avoir les éléments suivants installés sur votre machine :
+
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/) (Gestionnaire de Paquets Node)
+
+**Clonage du Dépôt**
+
+```bash
+git clone https://github.com/herissonfei/Auro.git
+cd aora
+```
+
+**Installation**
+Installez les dépendances du projet avec npm :
+
+```bash
+npm install
+```
+
+**Lancer le Projet**
+
+```bash
+npm start or npx expo start
+```
+
+**Expo Go**
+
+Téléchargez l'application [Expo Go](https://expo.dev/go)(version 50) sur votre appareil, puis utilisez-la pour scanner le code QR depuis le terminal et lancer.
+
+## <a name="english-version">English Version</a>
+
+<div align="center">
+ 
   <h3 align="center">Video Sharing App</h3>
 
 </div>
-
-## 📋 <a name="table">Table of Contents</a>
-
-1. 🤖 [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
-5. 🕸️ [Snippets](#snippets)
-6. 🔗 [Links](#links)
-7. 🚀 [More](#more)
 
 ## <a name="introduction">🤖 Introduction</a>
 
