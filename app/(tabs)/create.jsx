@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { router } from "expo-router";
 import { ResizeMode, Video } from "expo-av";
-import * as DocumentPicker from "expo-document-picker";
+import * as ImagePicker from "expo-image-picker";
 import { SafeAreaView } from "react-native-safe-area-context";
 import {
   View,
@@ -19,6 +19,7 @@ import { useGlobalContext } from "../../context/GlobalProvider";
 
 const Create = () => {
   const { user } = useGlobalContext();
+  // console.log("user", user);
   const [uploading, setUploading] = useState(false);
   const [form, setForm] = useState({
     title: "",
@@ -28,11 +29,19 @@ const Create = () => {
   });
 
   const openPicker = async (selectType) => {
-    const result = await DocumentPicker.getDocumentAsync({
-      type:
+    // const result = await DocumentPicker.getDocumentAsync({
+    //   type:
+    //     selectType === "image"
+    //       ? ["image/png", "image/jpg"]
+    //       : ["video/mp4", "video/gif"],
+    // });
+    let result = await ImagePicker.launchImageLibraryAsync({
+      mediaTypes:
         selectType === "image"
-          ? ["image/png", "image/jpg"]
-          : ["video/mp4", "video/gif"],
+          ? ImagePicker.MediaTypeOptions.Images
+          : ImagePicker.MediaTypeOptions.Videos,
+      aspect: [4, 3],
+      quality: 1,
     });
 
     if (!result.canceled) {
@@ -112,9 +121,9 @@ const Create = () => {
               <Video
                 source={{ uri: form.video.uri }}
                 className="w-full h-64 rounded-2xl"
-                useNativeControls
+                // useNativeControls
                 resizeMode={ResizeMode.COVER}
-                isLooping
+                // isLooping
               />
             ) : (
               <View className="w-full h-40 px-4 bg-black-100 rounded-2xl border border-black-200 flex justify-center items-center">
