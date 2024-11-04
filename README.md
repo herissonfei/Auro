@@ -11,6 +11,7 @@
 <div align="center">
   <a href="#english-version">Go to English Version</a>
 </div>
+
 ## <a name="introduction">🤖 Introduction</a>
 
 Développée avec React Native pour une expérience utilisateur fluide, Animatable pour des animations captivantes, et intégrée aux systèmes backend fiables d'Appwrite, cette application propose un design impressionnant et des fonctionnalités avancées, permettant le partage fluide de vidéos au sein de la communauté.
