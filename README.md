@@ -6,15 +6,16 @@
   </div>
 
   <h3 align="center">Application de Partage Vidéo</h3>
-  <h3 align="center"> [Demo](https://drive.google.com/file/d/1rVDtrMhNlRECtdBUQxn4_4h_EsALOBXP/view)</h3>
+  
 </div>
+
 <div align="center">
   <a href="#english-version">Go to English Version</a>
 </div>
 
-## <a name="introduction">🤖 Introduction</a>
-
 ## 🤖 [Demo](https://drive.google.com/file/d/1rVDtrMhNlRECtdBUQxn4_4h_EsALOBXP/view)
+
+## <a name="introduction">🤖 Introduction</a>
 
 Développée avec React Native pour une expérience utilisateur fluide, Animatable pour des animations captivantes, et intégrée aux systèmes backend fiables d'Appwrite, cette application propose un design impressionnant et des fonctionnalités avancées, permettant le partage fluide de vidéos au sein de la communauté.
 
