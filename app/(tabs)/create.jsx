@@ -19,7 +19,7 @@ import { useGlobalContext } from "../../context/GlobalProvider";
 
 const Create = () => {
   const { user } = useGlobalContext();
-  // console.log("user", user);
+
   const [uploading, setUploading] = useState(false);
   const [form, setForm] = useState({
     title: "",
@@ -29,12 +29,6 @@ const Create = () => {
   });
 
   const openPicker = async (selectType) => {
-    // const result = await DocumentPicker.getDocumentAsync({
-    //   type:
-    //     selectType === "image"
-    //       ? ["image/png", "image/jpg"]
-    //       : ["video/mp4", "video/gif"],
-    // });
     let result = await ImagePicker.launchImageLibraryAsync({
       mediaTypes:
         selectType === "image"

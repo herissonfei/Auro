@@ -6,8 +6,10 @@ import { images } from "../../constants";
 import useAppwrite from "../../lib/useAppwrite";
 import { getAllPosts, getLatestPosts } from "../../lib/appwrite";
 import { EmptyState, SearchInput, Trending, VideoCard } from "../../components";
-
+import { useGlobalContext } from "../../context/GlobalProvider";
 const Home = () => {
+  const { user } = useGlobalContext();
+
   const { data: posts, refetch } = useAppwrite(getAllPosts);
   const { data: latestPosts } = useAppwrite(getLatestPosts);
 
@@ -18,12 +20,6 @@ const Home = () => {
     await refetch();
     setRefreshing(false);
   };
-
-  // one flatlist
-  // with list header
-  // and horizontal flatlist
-
-  //  we cannot do that with just scrollview as there's both horizontal and vertical scroll (two flat lists, within trending)
 
   return (
     <SafeAreaView className="bg-primary h-full">
@@ -47,7 +43,7 @@ const Home = () => {
                   Welcome Back
                 </Text>
                 <Text className="text-2xl font-psemibold text-white">
-                  Hangfei
+                  {user?.username}
                 </Text>
               </View>
 
